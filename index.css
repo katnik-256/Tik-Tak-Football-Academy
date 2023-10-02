@@ -38,8 +38,20 @@ h1{
     font-weight: 800;
 }
 .moving-text{
-    animation: moveText 5s linear infinite;
+    animation: moveText 10s linear infinite;
     position: absolute;
+    white-space: nowrap;
+    top: 50;
+    
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%); /* Adjust the distance the text should move */
+    }
 }
 .navbar-toggler{
     border-color: #007bff

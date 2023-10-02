@@ -19,4 +19,4 @@ function moveText() {
 }
 
 // Start the animation
-setInterval(moveText, 4); // Adjust the interval for smoother or faster animation
+setInterval(moveText, 20); // Adjust the interval for smoother or faster animation
