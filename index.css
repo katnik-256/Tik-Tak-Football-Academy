@@ -17,7 +17,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 150px;
     background-color: #800c0c;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -25,23 +25,26 @@ body{
 }
 .flex-item{
     flex: 1;
-    padding: 20px;
+    padding-top: 0px;
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 10px;
     overflow: hidden;
+    margin-top: 10%;
 }
 h1{
     font-size: 3rem;
     text-align: center;
     font-weight: 800;
 }
+/*.......................Animation for the moving text................................*/
 .moving-text{
     animation: moveText 10s linear infinite;
-    position: absolute;
+    
     white-space: nowrap;
-    top: 50;
+    top: 10;
+    padding-top: 2px;
     
 }
 
@@ -50,9 +53,11 @@ h1{
         transform: translateX(-100%);
     }
     100% {
-        transform: translateX(100%); /* Adjust the distance the text should move */
+        transform: translateX(50%); /* Adjust the distance the text should move */
     }
 }
+/*.........................................................................................*/
+
 .navbar-toggler{
     border-color: #007bff
 }
@@ -68,7 +73,7 @@ h1{
     padding: 20px
 }
 
-/* styling body content*/
+/* ............................styling body content...............................................*/
 h2{
     color: #00426c;
     font-size: 39px;
