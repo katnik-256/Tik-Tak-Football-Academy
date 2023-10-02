@@ -37,6 +37,10 @@ h1{
     text-align: center;
     font-weight: 800;
 }
+.moving-text{
+    animation: moveText 5s linear infinite;
+    position: absolute;
+}
 .navbar-toggler{
     border-color: #007bff
 }
@@ -91,13 +95,15 @@ h6{
 }
 .img1{
     display: flex;
+    
     padding: 10px;
     height: 70%;
-    width: 40%;
+    width: 50%;
     flex: 1;
     float: left;
 }
 .txt{
-     
+     padding-left: 60%;
+     padding-top: 10%;
     
 }
