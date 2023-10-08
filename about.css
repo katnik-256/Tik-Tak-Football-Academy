@@ -1,0 +1,93 @@
+body{
+    background-color: whitesmoke;
+    background-image: url(./Assets/player_2.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color:white;
+   
+    background-attachment: fixed;
+}
+.nav-link{
+    color: white;
+    font-size: x-large;
+    align-items: center;
+    font-weight: 600; 
+}
+.flex-container{
+    margin-top: 35%;
+    margin-left: 0% 10%;
+}
+
+.flex-item{
+    flex: 1;
+    padding-top: 0px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    overflow: hidden;
+    margin-top: 10%;
+    flex: 0 0 calc(50% - 10px);
+    justify-content: center;
+    
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.navbar-toggler{
+    border-color: #007bff
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+
+}
+.footer{
+    background-color: #00426c;
+    color: #fff;
+    text-align: center;
+    padding: 20px
+}
+
+/* ............................styling body content...............................................*/
+h2{
+    color: #00426c;
+    font-size: 39px;
+    font-family: cairo, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    text-transform: none;
+    line-height: 44px;
+}
+h6{
+    font-size: 12px;
+    font-family: cairo,sans-serif;
+    color: #00426c;
+}
+.content{
+    font-family: cairo, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    color: #00426c;
+    font-weight: 400;
+}
+.btn{
+    color: #ffffffff;
+    font-size: 14px;
+    font-family: montserrat, sans-serif;
+    background: #00426c;
+    padding: 0px 32px;
+    font-size: 14px;
+    line-height: 44px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
