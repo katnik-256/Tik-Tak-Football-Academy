@@ -17,6 +17,7 @@ body{
 .flex-container{
     margin-top: 35%;
     margin-left: 0% 10%;
+    
 }
 
 .flex-item{
@@ -64,6 +65,11 @@ h2{
     text-transform: none;
     line-height: 44px;
 }
+h5{
+    font-size: 17px;
+    font-family: cairo,sans-serif;
+    color: #00426c;
+}
 h6{
     font-size: 12px;
     font-family: cairo,sans-serif;
@@ -91,3 +97,25 @@ h6{
     padding-left: 32px;
     padding-right: 32px;
 }
+
+.img2{
+    display: flex;
+    height: 60%;
+    width: 80%;
+    flex: 1;
+    float: left;
+}
+
+.content{
+    font-family: cairo, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    color: #00426c;
+    font-weight: 400;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
