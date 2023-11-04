@@ -26,11 +26,13 @@ body{
     
 }
 
-.container-lg{
+.container-lg-custom{
     margin-top: 20%;
     background-color: #fff;
     
-
+}
+.col-md-6{
+    padding-top: 10%;
 }
 
 h1{
@@ -86,7 +88,7 @@ h6{
     font-size: 12px;
     font-family: cairo,sans-serif;
     color: #00426c;
-    text-align: center;
+    
 }
 .content{
     font-family: cairo, sans-serif;
@@ -112,11 +114,8 @@ h6{
     padding-right: 32px;
 }
 
-  .text{
-    padding-left: 10%;
-    padding-top: 10%;
-    flex-wrap: nowrap;
+  .txt{
+    margin-left: 90px;
   }
-  
    
 
