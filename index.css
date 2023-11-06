@@ -85,6 +85,15 @@ h2{
     text-transform: none;
     line-height: 44px;
 }
+h5{
+    font-size: 17px;
+    font-family: cairo sans-serif;
+    color: #00426c;
+    text-align: center; 
+    font-weight: bolder; 
+    padding-top: 2%;
+}
+
 h6{
     font-size: 12px;
     font-family: cairo,sans-serif;
