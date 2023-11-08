@@ -35,6 +35,12 @@ body{
 .col-md-6{
     padding-top: 10%;
 }
+.col-md-3{
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-bottom: 0px;
+    align-items: center;
+}
 
 h1{
     font-size: 3rem;
@@ -90,7 +96,7 @@ h5{
     font-family: cairo sans-serif;
     color: #00426c;
     text-align: center; 
-    font-weight: bolder; 
+    font-weight: 600; 
     padding-top: 2%;
 }
 
@@ -126,6 +132,29 @@ h6{
 
   .txt{
     margin-left: 90px;
+  }
+  .card{
+    padding-bottom: 1%;
+  }
+  .card-text{
+    font-family: cairo, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    color: #00426c;
+    font-weight: 400;
+  }
+  .card-title{
+    color: #00426c;
+    font-size: 20px;
+    font-family: cairo, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    text-transform: none;
+    line-height: 44px;
+  }
+  .card-image{
+    height: 300px;
   }
    
 
