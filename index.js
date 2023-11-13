@@ -6,15 +6,15 @@ const columnWidth = document.querySelector('.col-md').offsetWidth;
 const initialPosition = -movingText.offsetWidth;
 
 // Set the initial position
-movingText.style.left = `${initialPosition}px`;
+movingText.style.right = `${initialPosition}px`;
 
 // Function to move the text
 function moveText() {
-    const currentPosition = parseFloat(getComputedStyle(movingText).left);
+    const currentPosition = parseFloat(getComputedStyle(movingText).right);
     if (currentPosition > columnWidth) {
-        movingText.style.left = `${initialPosition}px`;
+        movingText.style.right = `${initialPosition}px`;
     } else {
-        movingText.style.left = `${currentPosition + 1}px`; // Adjust the speed by changing the increment value
+        movingText.style.right = `${currentPosition + 1}px`; // Adjust the speed by changing the increment value
     }
 }
 
