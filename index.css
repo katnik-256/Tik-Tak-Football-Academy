@@ -165,3 +165,39 @@ h6{
   }
    
 
+  /*-------------------------------------sticky social media icons------------------*/
+  /* Sticky social icons styles */
+.social-icons {
+    position: sticky;
+    top: 50%; /* Adjust the position from the top */
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+  
+  .social-icons a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #333;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  /* Change colors or styles as needed for different social icons */
+  .social-icons .facebook { background-color: #3b5998; }
+  .social-icons .twitter { background-color: #55acee; }
+  .social-icons .whatsapp { background-color: #25D366; }
+  .social-icons .youtube { background-color: #FF0000; }
+  
+  /* Adjustments for small screens */
+  @media (max-width: 767px) {
+    .social-icons {
+      display: none; /* Hide on small screens */
+    }
+  }
+  
+
