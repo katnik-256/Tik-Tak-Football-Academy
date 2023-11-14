@@ -129,6 +129,10 @@ h6{
     letter-spacing: 0px;
     padding-left: 32px;
     padding-right: 32px;
+
+}
+.btn-custom:hover{
+    background-color: #800707;
 }
 
   .txt{
