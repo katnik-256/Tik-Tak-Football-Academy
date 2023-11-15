@@ -20,3 +20,52 @@ function moveText() {
 
 // Start the animation
 setInterval(moveText, 20); // Adjust the interval for smoother or faster animation
+
+//------------------------social media icon//////////////////////////////////////////
+
+// Get the social icons element
+var socialIcons = document.querySelector('.social-icons');
+
+// Function to handle scrolling
+function handleScroll() {
+  // Get the vertical scroll position
+  var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+  // Show/hide social icons based on scroll position
+  if (scrollPosition > 50) { // Change '100' to your preferred scroll position
+    socialIcons.style.display = 'block';
+  } else {
+    socialIcons.style.display = 'none';
+  }
+}
+
+// Attach scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+
+//................google map.................................................................//
+
+// Initialize and display the map
+        function initMap() {
+            // Location coordinates
+            var location = { lat: 0.067611, lng: 31.999914 }; // latitudes and longtudes
+
+            // Create a map centered at the given coordinates
+            var map = new google.maps.Map(document.getElementById("map"), {
+                center: location,
+                zoom: 15 // Adjust the zoom level
+            });
+
+            // Add a marker at the specified location
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "Tik Tak Football Academy" // Marker title
+            });
+        }
+    
+    
+        // Initialize the map when the page loads
+        window.onload = function() {
+            initMap();
+        };
