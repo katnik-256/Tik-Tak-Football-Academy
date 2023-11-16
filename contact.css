@@ -4,5 +4,31 @@
     max-width: 100%;
 }
 
+.form-label{
+    color: rgb(33, 32, 32);
+    font-size: 20px;
+    font-weight: 7000px;
+    font-family: sans-serif;
 
+}
+.btn{
+    font-size: 25px;
+    margin-top: 3%;
+    background-color: #1d9f4d;
+    border-color: #25D366;
+    margin-bottom: 0;
+
+}
+.btn:hover{
+    background-color: #18542e;
+}
+.form-control{
+    background-color: #ffffff;
+    padding: 6px 12px;
+    
+}
+.row{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 
