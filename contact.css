@@ -1,4 +1,10 @@
 
+.container-fluid{
+    margin-top: 19%;
+    background-color: #fff;
+    padding-bottom: 10%;
+    
+}
 #map {
     height: 360px; 
     max-width: 100%;

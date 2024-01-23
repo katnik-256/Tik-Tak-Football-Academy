@@ -69,3 +69,21 @@ window.addEventListener('scroll', handleScroll);
         window.onload = function() {
             initMap();
         };
+
+        // /////////////////////////Alert button///////////////////////////////////////////////
+
+        // Function to show the alert and set a timeout to hide it
+  function showAutoDisappearingAlert() {
+    var alertElement = document.getElementById('autoDisappearingAlert');
+    
+    // Show the alert
+    alertElement.style.display = 'block';
+
+    // Set a timeout to hide the alert after 5 seconds
+    setTimeout(function() {
+      alertElement.style.display = 'none';
+    }, 5);
+  }
+
+  // Call the function on page load or wherever appropriate
+  showAutoDisappearingAlert();
