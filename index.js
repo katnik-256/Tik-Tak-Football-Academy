@@ -6,15 +6,15 @@ const columnWidth = document.querySelector('.col-md').offsetWidth;
 const initialPosition = -movingText.offsetWidth;
 
 // Set the initial position
-movingText.style.right = `${initialPosition}px`;
+movingText.style.left = `${initialPosition}px`;
 
 // Function to move the text
 function moveText() {
-    const currentPosition = parseFloat(getComputedStyle(movingText).right);
+    const currentPosition = parseFloat(getComputedStyle(movingText).left);
     if (currentPosition > columnWidth) {
-        movingText.style.right = `${initialPosition}px`;
+        movingText.style.left = `${initialPosition}px`;
     } else {
-        movingText.style.right = `${currentPosition + 1}px`; // Adjust the speed by changing the increment value
+        movingText.style.left = `${currentPosition + 1}px`; // Adjust the speed by changing the increment value
     }
 }
 
@@ -32,7 +32,7 @@ function handleScroll() {
   var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
   // Show/hide social icons based on scroll position
-  if (scrollPosition > 50) { // Change '100' to your preferred scroll position
+  if (scrollPosition > 50) { // Change '50' to your preferred scroll position
     socialIcons.style.display = 'block';
   } else {
     socialIcons.style.display = 'none';
