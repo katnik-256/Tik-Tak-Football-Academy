@@ -19,13 +19,10 @@ body{
     align-items: center;
     height: 150px;
     background-color: white;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     flex-wrap: wrap;
     
     
 }
-
 .container-fluid{
     margin-top: 19%;
     background-color: #fff;
@@ -48,25 +45,6 @@ h1{
     font-weight: 800;
     color: #00426c;
 }
-/*.......................Animation for the moving text................................
-.moving-text{
-    animation: moveText 10s linear infinite;
-    
-    white-space: nowrap;
-    top: 10;
-    padding-top: 2px;
-    
-}
-
-@keyframes moveText {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(50%); /* Adjust the distance the text should move 
-    }
-}
-/*.........................................................................................*/
 
 .navbar-toggler{
     border-color: white
