@@ -183,4 +183,56 @@ h6{
     }
   }
   */
+  /*...................................image transition.....................*/
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .image-slider {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Scales with viewport height */
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .slide-text {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: clamp(1rem, 2vw, 2rem); /* Responsive font size */
+    max-width: 90%;
+  }
+
+  @media (max-width: 600px) {
+    .slide-text {
+      left: 3%;
+      right: 3%;
+      font-size: 1rem;
+    }
+  }

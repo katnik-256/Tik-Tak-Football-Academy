@@ -87,3 +87,14 @@ window.addEventListener('scroll', handleScroll);
 
   // Call the function on page load or wherever appropriate
   showAutoDisappearingAlert();
+//////////// imagge slider/////////////////////////
+  window.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('#slider .slide');
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 2000); // changes every 2 seconds
+  });

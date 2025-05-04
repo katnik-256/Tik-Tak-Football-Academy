@@ -84,8 +84,17 @@
 <!---- Body Content-->
     <!--.....................Container..............................-->
 
-   
-    
+    <div class="image-slider" id="slider">
+        <div class="slide active" style="background-image: url(./Assets/image\ 2.jpg);">
+          <div class="slide-text">Empowering Talent</div>
+        </div>
+        <div class="slide" style="background-image: url(./Assets/image\ 3.jpg);">
+          <div class="slide-text">Shaping the Future</div>
+        </div>
+        <div class="slide" style="background-image: url(./Assets/image\ 4.jpg);">
+          <div class="slide-text">Inspiring Young Minds</div>
+        </div>
+      </div>
 
 
 
@@ -192,7 +201,18 @@
             
         </div>
     </footer>
+<script>
+     window.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('#slider .slide');
+    let index = 0;
 
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 5000); // changes every 2 seconds
+  });
+</script>
 
     <script src="index.js"></script>
 
