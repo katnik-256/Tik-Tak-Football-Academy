@@ -1,0 +1,387 @@
+/* Support Page Header */
+.support-header {
+    background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.8)), url('support-header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 0 80px;
+    margin-top: 80px;
+}
+
+.support-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.support-header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Support Tabs */
+.support-tabs {
+    background-color: var(--light-gray);
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tab-btn {
+    padding: 12px 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-weight: 600;
+    color: var(--dark-gray);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover, .tab-btn.active {
+    color: var(--dark-red);
+    border-bottom: 3px solid var(--dark-red);
+}
+
+/* Support Content Sections */
+.support-content {
+    display: none;
+    padding: 60px 0;
+}
+
+.support-content.active {
+    display: block;
+}
+
+.support-hero {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.support-info {
+    flex: 1;
+}
+
+.support-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.support-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Financial Support Section */
+.donation-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.donation-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.donation-card h3 {
+    color: var(--dark-red);
+    margin-bottom: 10px;
+}
+
+.amount-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.amount-btn {
+    padding: 8px 15px;
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.amount-btn:hover {
+    background-color: var(--dark-red);
+    color: white;
+}
+
+.custom-amount {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Impact Grid */
+.impact-section {
+    margin: 60px 0;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.impact-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.impact-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--sky-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.impact-card h4 {
+    color: var(--dark-red);
+    margin-bottom: 10px;
+}
+
+/* Equipment Donations Section */
+.equipment-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+}
+
+.equipment-form h3 {
+    color: var(--dark-red);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group select, .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.equipment-needed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(139, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+}
+
+.equipment-needed h4 {
+    margin-bottom: 10px;
+}
+
+.equipment-needed ul {
+    list-style: none;
+}
+
+.equipment-needed li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.equipment-needed i {
+    color: var(--strong-yellow);
+}
+
+/* Drop-off Locations */
+.dropoff-info {
+    margin: 60px 0;
+}
+
+.location-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.location-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.location-card h4 {
+    color: var(--dark-red);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.location-card i {
+    color: var(--sky-blue);
+}
+
+/* Volunteer Section */
+.volunteer-opportunities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.opportunity-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.opportunity-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--strong-yellow);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+}
+
+.opportunity-card h3 {
+    color: var(--dark-red);
+    margin-bottom: 10px;
+}
+
+.volunteer-form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.volunteer-form h3 {
+    color: var(--dark-red);
+    margin-bottom: 15px;
+}
+
+/* Support CTA */
+.support-cta {
+    background-color: var(--dark-red);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.support-cta h2 {
+    margin-bottom: 15px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .support-hero {
+        flex-direction: column;
+    }
+    
+    .support-image {
+        order: -1;
+    }
+    
+    .equipment-needed, .volunteer-form {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .tab-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .support-header {
+        padding: 100px 0 60px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .support-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .donation-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-grid, .location-cards, .volunteer-opportunities {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Elite Soccer Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation Bar (Same as Homepage) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./Assets/Logo.png" alt="TikTak Academy">
+                <span>TikTak Academy</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Coaches</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="btn-register">Register Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header gallery-header">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Explore moments from our training sessions, matches, and events</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="training">Training</button>
+                <button class="filter-btn" data-filter="matches">Matches</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="team">Team Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Training Photos -->
+                <div class="gallery-item" data-category="training">
+                    <img src="gallery/training1.jpg" alt="Training Session">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Technical Drills</h3>
+                            <p>Players working on ball control and passing accuracy</p>
+                        </div>
+                        <a href="gallery/training1.jpg" class="gallery-expand" data-lightbox="training" data-title="Technical Drills - Players working on ball control and passing accuracy">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="training">
+                    <img src="gallery/training2.jpg" alt="Goalkeeper Training">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Goalkeeper Training</h3>
+                            <p>Specialized sessions for our keepers</p>
+                        </div>
+                        <a href="gallery/training2.jpg" class="gallery-expand" data-lightbox="training" data-title="Goalkeeper Training - Specialized sessions for our keepers">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Match Photos -->
+                <div class="gallery-item" data-category="matches">
+                    <img src="gallery/match1.jpg" alt="Match Action">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>League Match</h3>
+                            <p>U14 team in action against local rivals</p>
+                        </div>
+                        <a href="gallery/match1.jpg" class="gallery-expand" data-lightbox="matches" data-title="League Match - U14 team in action against local rivals">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="matches">
+                    <img src="gallery/match2.jpg" alt="Goal Celebration">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Goal Celebration</h3>
+                            <p>U16 team celebrates a championship-winning goal</p>
+                        </div>
+                        <a href="gallery/match2.jpg" class="gallery-expand" data-lightbox="matches" data-title="Goal Celebration - U16 team celebrates a championship-winning goal">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Facilities Photos -->
+                <div class="gallery-item" data-category="facilities">
+                    <img src="gallery/facility1.jpg" alt="Training Ground">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Main Training Ground</h3>
+                            <p>Our professional-grade training facility</p>
+                        </div>
+                        <a href="gallery/facility1.jpg" class="gallery-expand" data-lightbox="facilities" data-title="Main Training Ground - Our professional-grade training facility">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="facilities">
+                    <img src="gallery/facility2.jpg" alt="Indoor Facility">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Indoor Facility</h3>
+                            <p>All-weather training space for year-round development</p>
+                        </div>
+                        <a href="gallery/facility2.jpg" class="gallery-expand" data-lightbox="facilities" data-title="Indoor Facility - All-weather training space for year-round development">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Events Photos -->
+                <div class="gallery-item" data-category="events">
+                    <img src="gallery/event1.jpg" alt="Award Ceremony">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Annual Awards</h3>
+                            <p>Recognizing our players' achievements</p>
+                        </div>
+                        <a href="gallery/event1.jpg" class="gallery-expand" data-lightbox="events" data-title="Annual Awards - Recognizing our players' achievements">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="gallery/event2.jpg" alt="Summer Camp">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Summer Camp</h3>
+                            <p>Fun and learning during our intensive summer program</p>
+                        </div>
+                        <a href="gallery/event2.jpg" class="gallery-expand" data-lightbox="events" data-title="Summer Camp - Fun and learning during our intensive summer program">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Team Photos -->
+                <div class="gallery-item" data-category="team">
+                    <img src="gallery/team1.jpg" alt="U12 Team">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>U12 Team</h3>
+                            <p>2023 season team photo</p>
+                        </div>
+                        <a href="gallery/team1.jpg" class="gallery-expand" data-lightbox="team" data-title="U12 Team - 2023 season team photo">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="team">
+                    <img src="gallery/team2.jpg" alt="Elite Team">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Elite Team</h3>
+                            <p>Our top competitive squad</p>
+                        </div>
+                        <a href="gallery/team2.jpg" class="gallery-expand" data-lightbox="team" data-title="Elite Team - Our top competitive squad">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Additional photos would continue here -->
+                <div class="gallery-item" data-category="training">
+                    <img src="gallery/training3.jpg" alt="Fitness Training">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Fitness Training</h3>
+                            <p>Building athleticism and endurance</p>
+                        </div>
+                        <a href="gallery/training3.jpg" class="gallery-expand" data-lightbox="training" data-title="Fitness Training - Building athleticism and endurance">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="matches">
+                    <img src="gallery/match3.jpg" alt="Tournament Win">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Tournament Champions</h3>
+                            <p>U15 team celebrates regional tournament victory</p>
+                        </div>
+                        <a href="gallery/match3.jpg" class="gallery-expand" data-lightbox="matches" data-title="Tournament Champions - U15 team celebrates regional tournament victory">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-load-more">
+                <button class="btn" id="loadMore">Load More Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery -->
+    <section class="video-gallery">
+        <div class="container">
+            <h2 class="section-title">Video Highlights</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/example1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>2023 Season Highlights</h3>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/example2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>Training Techniques</h3>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/example3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>Player Interviews</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Homepage) -->
+    <footer class="footer">
+        <!-- Footer content from homepage -->
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal">
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+            <button class="lightbox-close">&times;</button>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="./Assets/Logo.png" alt="TikTak Football Academy">
+                    <span>TikTak Football Academy</span>
+                </div>
+                <p>Developing technical excellence, tactical understanding, and personal character in young soccer players.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="program.html">Programs</a></li>
+                    <li><a href="#">Coaches</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Programs</h3>
+                <ul>
+                    <li><a href="#">Youth Development</a></li>
+                    <li><a href="#">Competitive Teams</a></li>
+                    <li><a href="#">Elite Training</a></li>
+                    <li><a href="#">Soccer Camps</a></li>
+                    <li><a href="#">Goalkeeper Training</a></li>
+                    <li><a href="#">College Prep</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> MPIGI, Kituntu-Sub County</li>
+                    <li><i class="fas fa-phone"></i> +256 753939396</li>
+                    <li><i class="fas fa-envelope"></i> tiktakfootballacademy@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 9am-7pm | Sat: 8am-4pm</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2024 TikTak Football Academy. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        // Gallery Filter
+const filterButtons = document.querySelectorAll('.filter-btn');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        const filterValue = button.getAttribute('data-filter');
+        
+        galleryItems.forEach(item => {
+            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+
+// Lightbox Gallery
+const galleryExpands = document.querySelectorAll('.gallery-expand');
+const lightboxModal = document.querySelector('.lightbox-modal');
+const lightboxImage = document.querySelector('.lightbox-image');
+const lightboxCaption = document.querySelector('.lightbox-caption');
+const lightboxClose = document.querySelector('.lightbox-close');
+const lightboxPrev = document.querySelector('.lightbox-prev');
+const lightboxNext = document.querySelector('.lightbox-next');
+
+let currentImageIndex = 0;
+let images = [];
+
+// Initialize lightbox
+galleryExpands.forEach((expand, index) => {
+    expand.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Get all images in the current filter
+        const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+        images = [];
+        
+        document.querySelectorAll('.gallery-item').forEach((item, i) => {
+            if (activeFilter === 'all' || item.getAttribute('data-category') === activeFilter) {
+                if (item.style.display !== 'none') {
+                    const imgSrc = item.querySelector('img').getAttribute('src');
+                    const imgTitle = item.querySelector('.gallery-info h3').textContent;
+                    const imgDesc = item.querySelector('.gallery-info p').textContent;
+                    images.push({
+                        src: imgSrc,
+                        title: imgTitle,
+                        desc: imgDesc,
+                        index: i
+                    });
+                }
+            }
+        });
+        
+        // Find the clicked image in the images array
+        const clickedImageSrc = expand.getAttribute('href');
+        currentImageIndex = images.findIndex(img => img.src === clickedImageSrc);
+        
+        // Show the clicked image
+        showImage(currentImageIndex);
+    });
+});
+
+function showImage(index) {
+    if (images.length > 0) {
+        const image = images[index];
+        lightboxImage.setAttribute('src', image.src);
+        lightboxCaption.innerHTML = `<strong>${image.title}</strong> - ${image.desc}`;
+        lightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+// Close lightbox
+lightboxClose.addEventListener('click', () => {
+    lightboxModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+});
+
+// Navigate between images
+lightboxPrev.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    showImage(currentImageIndex);
+});
+
+lightboxNext.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    showImage(currentImageIndex);
+});
+
+// Close lightbox when clicking outside the image
+lightboxModal.addEventListener('click', (e) => {
+    if (e.target === lightboxModal) {
+        lightboxModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    if (lightboxModal.classList.contains('active')) {
+        if (e.key === 'Escape') {
+            lightboxModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        } else if (e.key === 'ArrowLeft') {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        } else if (e.key === 'ArrowRight') {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+    }
+});
+
+// Load More Photos
+const loadMoreBtn = document.getElementById('loadMore');
+let visibleItems = 8; // Initial number of visible items
+
+if (loadMoreBtn) {
+    // Initially hide items beyond the first set
+    galleryItems.forEach((item, index) => {
+        if (index >= visibleItems) {
+            item.style.display = 'none';
+        }
+    });
+    
+    loadMoreBtn.addEventListener('click', () => {
+        visibleItems += 4; // Load 4 more items
+        
+        // Show the next set of items
+        galleryItems.forEach((item, index) => {
+            if (index < visibleItems) {
+                item.style.display = 'block';
+            }
+        });
+        
+        // Hide the button if all items are visible
+        if (visibleItems >= galleryItems.length) {
+            loadMoreBtn.style.display = 'none';
+        }
+    });
+}
+    </script>
+</body>
+</html>

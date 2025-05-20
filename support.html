@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Our Academy | Elite Soccer Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="suppot.css">
+</head>
+<body>
+    <!-- Navigation Bar (Same as Homepage) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./Assets/Logo.png" alt="TikTak Academy">
+                <span>TikTak Academy</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="coach.html">Coaches</a></li>
+                <li><a href="facilty.html" class="btn-register">Facility</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html" class="active">Support Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Support Page Header -->
+    <section class="support-header">
+        <div class="container">
+            <h1>Support Our Academy</h1>
+            <p>Help us train the next generation of soccer stars through donations or equipment contributions</p>
+        </div>
+    </section>
+
+    <!-- Support Options Tabs -->
+    <section class="support-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="financial">Financial Support</button>
+                <button class="tab-btn" data-tab="equipment">Equipment Donations</button>
+                <button class="tab-btn" data-tab="volunteer">Volunteer</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Support Section -->
+    <section class="support-content active" id="financial">
+        <div class="container">
+            <div class="support-hero">
+                <div class="support-info">
+                    <h2>Financial Donations</h2>
+                    <p>Your contributions help fund scholarships, facility upgrades, and training programs for underprivileged athletes.</p>
+                    <div class="donation-options">
+                        <div class="donation-card">
+                            <h3>One-Time Donation</h3>
+                            <p>Make an immediate impact with a single gift.</p>
+                            <div class="amount-options">
+                                <button class="amount-btn">$25</button>
+                                <button class="amount-btn">$50</button>
+                                <button class="amount-btn">$100</button>
+                                <button class="amount-btn">$250</button>
+                                <input type="number" placeholder="Custom Amount" class="custom-amount">
+                            </div>
+                            <a href="#" class="btn">Donate Now</a>
+                        </div>
+                        <div class="donation-card">
+                            <h3>Monthly Support</h3>
+                            <p>Sustain our mission with recurring donations.</p>
+                            <div class="amount-options">
+                                <button class="amount-btn">$10/mo</button>
+                                <button class="amount-btn">$25/mo</button>
+                                <button class="amount-btn">$50/mo</button>
+                                <button class="amount-btn">$100/mo</button>
+                            </div>
+                            <a href="#" class="btn">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="support-image">
+                    <img src="support/donation.jpg" alt="Financial Support">
+                </div>
+            </div>
+
+            <div class="impact-section">
+                <h3>How Your Donation Helps</h3>
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Scholarships</h4>
+                        <p>Sponsor a young athlete who can't afford training fees.</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="fas fa-soccer-ball"></i>
+                        </div>
+                        <h4>Equipment</h4>
+                        <p>Provide balls, cones, and training gear for players.</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4>Facility Upgrades</h4>
+                        <p>Improve fields, locker rooms, and training spaces.</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>Coach Development</h4>
+                        <p>Fund coaching certifications and training programs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"Thanks to donors, my son received a scholarship and now trains with professional coaches. Your support changes lives!"</p>
+                    <div class="testimonial-author">
+                        <img src="testimonials/parent2.jpg" alt="Maria Gonzalez">
+                        <div>
+                            <h4>Maria Gonzalez</h4>
+                            <span>Parent of Scholarship Recipient</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Donations Section -->
+    <section class="support-content" id="equipment">
+        <div class="container">
+            <div class="support-hero">
+                <div class="support-info">
+                    <h2>Equipment Donations</h2>
+                    <p>We accept new or gently used soccer gear to help players in need.</p>
+                    
+                    <div class="equipment-form">
+                        <h3>Request or Donate Equipment</h3>
+                        <form id="equipmentForm">
+                            <div class="form-group">
+                                <label for="equipment-type">Equipment Type</label>
+                                <select id="equipment-type" name="equipment-type" required>
+                                    <option value="" disabled selected>Select Equipment</option>
+                                    <option value="cleats">Cleats</option>
+                                    <option value="balls">Soccer Balls</option>
+                                    <option value="jerseys">Jerseys/Uniforms</option>
+                                    <option value="cones">Training Cones</option>
+                                    <option value="goals">Portable Goals</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="equipment-condition">Condition</label>
+                                <select id="equipment-condition" name="equipment-condition" required>
+                                    <option value="" disabled selected>Select Condition</option>
+                                    <option value="new">New</option>
+                                    <option value="like-new">Like New</option>
+                                    <option value="good">Good</option>
+                                    <option value="fair">Fair</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="equipment-quantity">Quantity</label>
+                                <input type="number" id="equipment-quantity" name="equipment-quantity" min="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Notes</label>
+                                <textarea id="message" name="message" rows="3" placeholder="Any special requests or details"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="support-image">
+                    <img src="support/equipment.jpg" alt="Equipment Donations">
+                    <div class="equipment-needed">
+                        <h4>Most Needed Items</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Size 4 & 5 Soccer Balls</li>
+                            <li><i class="fas fa-check"></i> Youth Cleats (Size 1-6)</li>
+                            <li><i class="fas fa-check"></i> Shin Guards</li>
+                            <li><i class="fas fa-check"></i> Training Vests</li>
+                            <li><i class="fas fa-check"></i> Goalkeeper Gloves</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropoff-info">
+                <h3>Equipment Drop-Off Locations</h3>
+                <div class="location-cards">
+                    <div class="location-card">
+                        <h4><i class="fas fa-map-marker-alt"></i> Main Academy</h4>
+                        <p>123 Soccer Way, Sports City</p>
+                        <p><strong>Hours:</strong> Mon-Fri, 9am-5pm</p>
+                    </div>
+                    <div class="location-card">
+                        <h4><i class="fas fa-map-marker-alt"></i> Community Center</h4>
+                        <p>456 Athletic Ave, Downtown</p>
+                        <p><strong>Hours:</strong> Tue & Thu, 3pm-7pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section class="support-content" id="volunteer">
+        <div class="container">
+            <div class="support-hero">
+                <div class="support-info">
+                    <h2>Volunteer With Us</h2>
+                    <p>Join our team and help make a difference in young athletes' lives.</p>
+                    
+                    <div class="volunteer-opportunities">
+                        <div class="opportunity-card">
+                            <div class="opportunity-icon">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h3>Event Support</h3>
+                            <p>Help organize tournaments, fundraisers, and community events.</p>
+                            <a href="#" class="btn-outline">Learn More</a>
+                        </div>
+                        <div class="opportunity-card">
+                            <div class="opportunity-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Team Assistant</h3>
+                            <p>Support coaches during training sessions and matches.</p>
+                            <a href="#" class="btn-outline">Learn More</a>
+                        </div>
+                        <div class="opportunity-card">
+                            <div class="opportunity-icon">
+                                <i class="fas fa-wrench"></i>
+                            </div>
+                            <h3>Facility Maintenance</h3>
+                            <p>Help maintain our fields and equipment.</p>
+                            <a href="#" class="btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="support-image">
+                    <img src="support/volunteer.jpg" alt="Volunteer Opportunities">
+                    <div class="volunteer-form">
+                        <h3>Volunteer Application</h3>
+                        <form id="volunteerForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected>Interest Area</option>
+                                    <option>Coaching Assistance</option>
+                                    <option>Event Support</option>
+                                    <option>Facility Maintenance</option>
+                                    <option>Fundraising</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn">Apply Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support CTA -->
+    <section class="support-cta">
+        <div class="container">
+            <h2>Every Contribution Makes a Difference</h2>
+            <p>Join us in developing future champions on and off the field.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn">Donate Now</a>
+                <a href="contact.html" class="btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="logo-white.png" alt="Elite Soccer Academy">
+                        <span>Elite Soccer Academy</span>
+                    </div>
+                    <p>Developing technical excellence, tactical understanding, and personal character in young soccer players.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Coaches</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Youth Development</a></li>
+                        <li><a href="#">Competitive Teams</a></li>
+                        <li><a href="#">Elite Training</a></li>
+                        <li><a href="#">Soccer Camps</a></li>
+                        <li><a href="#">Goalkeeper Training</a></li>
+                        <li><a href="#">College Prep</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> MPIGI, Kituntu-Sub County</li>
+                            <li><i class="fas fa-phone"></i> +256 753939396</li>
+                            <li><i class="fas fa-envelope"></i> tiktakfootballacademy@gmail.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 9am-7pm | Sat: 8am-4pm</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 TikTak Football Academy. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Tab Functionality
+const tabButtons = document.querySelectorAll('.tab-btn');
+const supportContents = document.querySelectorAll('.support-content');
+
+tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons and contents
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        supportContents.forEach(content => content.classList.remove('active'));
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        // Show corresponding content
+        const tabId = button.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+    });
+});
+
+// Donation Amount Selection
+const amountButtons = document.querySelectorAll('.amount-btn');
+amountButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        amountButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    });
+});
+
+// Form Submissions
+document.getElementById('equipmentForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thank you! We will contact you about your equipment donation/request.');
+    e.target.reset();
+});
+
+document.getElementById('volunteerForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thank you for your interest in volunteering! We will contact you soon.');
+    e.target.reset();
+});
+    </script>
+</body>
+</html>

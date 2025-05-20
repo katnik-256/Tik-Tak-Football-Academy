@@ -1,0 +1,457 @@
+/* Coaches Page Header */
+.coaches-header {
+    background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.8)), url('coaches-header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 0 80px;
+    margin-top: 80px;
+}
+
+.coaches-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.coaches-header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Coaching Philosophy */
+.philosophy-section {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+}
+
+.philosophy-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.philosophy-content h2 {
+    margin-bottom: 30px;
+}
+
+.philosophy-content p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.philosophy-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.philosophy-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--dark-red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.philosophy-card h3 {
+    color: var(--dark-red);
+    margin-bottom: 15px;
+}
+
+/* Coaches Grid Section */
+.coaches-grid-section {
+    padding: 80px 0;
+}
+
+.coaches-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--dark-red);
+    color: white;
+}
+
+.coaches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.coach-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.coach-card:hover {
+    transform: translateY(-10px);
+}
+
+.coach-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.coach-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.coach-card:hover .coach-image img {
+    transform: scale(1.05);
+}
+
+.coach-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--strong-yellow);
+    color: var(--dark-gray);
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.coach-info {
+    padding: 25px;
+}
+
+.coach-info h3 {
+    color: var(--dark-red);
+    margin-bottom: 5px;
+}
+
+.coach-title {
+    color: var(--dark-gray);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.coach-credentials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.coach-credentials span {
+    background-color: var(--light-gray);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.coach-credentials i {
+    color: var(--dark-red);
+}
+
+.coach-bio {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.coach-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coach-contact a:first-child {
+    color: var(--dark-red);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.coach-contact a:first-child:hover {
+    color: var(--sky-blue);
+}
+
+/* Benefits Section */
+.benefits-section {
+    background-color: var(--sky-blue);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.benefits-section .section-title {
+    color: white;
+}
+
+.benefits-section .section-title::after {
+    background-color: var(--strong-yellow);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-icon {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--dark-red);
+    font-size: 1.8rem;
+}
+
+.benefit-card h3 {
+    margin-bottom: 15px;
+}
+
+/* Join Team CTA */
+.join-team-cta {
+    background: linear-gradient(rgba(139, 0, 0, 0.9), rgba(139, 0, 0, 0.9)), url('coaches-cta.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.join-team-cta h2 {
+    margin-bottom: 15px;
+}
+
+.join-team-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Coach Modal */
+.coach-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.coach-modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--light-gray);
+    position: relative;
+}
+
+.modal-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-right: 20px;
+}
+
+.modal-title h3 {
+    color: var(--dark-red);
+    margin-bottom: 5px;
+}
+
+.modal-badge {
+    display: inline-block;
+    background-color: var(--strong-yellow);
+    color: var(--dark-gray);
+    padding: 3px 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-about {
+    margin-bottom: 30px;
+}
+
+.modal-about h4 {
+    color: var(--dark-red);
+    margin-bottom: 15px;
+}
+
+.modal-details {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.details-column {
+    flex: 1;
+}
+
+.details-column h4 {
+    color: var(--dark-red);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.details-column ul {
+    list-style: none;
+}
+
+.details-column li {
+    padding: 8px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.details-column li i {
+    position: absolute;
+    left: 0;
+    color: var(--dark-red);
+}
+
+.modal-contact {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .coaches-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    .modal-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .coaches-header {
+        padding: 100px 0 60px;
+    }
+    
+    .coaches-filter {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .modal-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .modal-header img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .coaches-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .coaches-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Coaches | Elite Soccer Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="caoch.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./Assets/Logo.png" alt="TikTak Academy">
+                <span>TikTak Academy</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="coach.html" class="active">Coaches</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html">Support Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Coaches Page Header -->
+    <section class="coaches-header">
+        <div class="container">
+            <h1>Meet Our Coaches</h1>
+            <p>Professional trainers dedicated to developing players at every level</p>
+        </div>
+    </section>
+
+    <!-- Coaching Philosophy -->
+    <section class="philosophy-section">
+        <div class="container">
+            <div class="philosophy-content">
+                <h2>Our Coaching Philosophy</h2>
+                <p>At TikTak Football Academy, we believe in a <strong>player-centered approach</strong> that focuses on technical excellence, tactical intelligence, and personal growth. Our coaches are licensed professionals who combine modern training methods with a passion for mentorship.</p>
+                <div class="philosophy-grid">
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h3>Technical Mastery</h3>
+                        <p>Develop ball control, passing, shooting, and dribbling through structured drills.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon">
+                            <i class="fas fa-chess"></i>
+                        </div>
+                        <h3>Tactical Awareness</h3>
+                        <p>Teach game intelligence, positioning, and decision-making.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Character Building</h3>
+                        <p>Foster leadership, teamwork, and sportsmanship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Grid -->
+    <section class="coaches-grid-section">
+        <div class="container">
+            <h2 class="section-title">Our Coaching Staff</h2>
+            <div class="coaches-filter">
+                <button class="filter-btn active" data-filter="all">All Coaches</button>
+                <button class="filter-btn" data-filter="senior">Senior Team</button>
+                <button class="filter-btn" data-filter="youth">Youth Development</button>
+                <button class="filter-btn" data-filter="goalkeeping">Goalkeeping</button>
+            </div>
+            <div class="coaches-grid">
+                <!-- Coach 1 -->
+                <div class="coach-card" data-category="senior">
+                    <div class="coach-image">
+                        <img src="coaches/coach1.jpg" alt="Coach Carlos Mendez">
+                        <div class="coach-badge">Head Coach</div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>Carlos Mendez</h3>
+                        <p class="coach-title">Director of Coaching</p>
+                        <div class="coach-credentials">
+                            <span><i class="fas fa-certificate"></i> UEFA Pro License</span>
+                            <span><i class="fas fa-globe"></i> Former La Liga Player</span>
+                        </div>
+                        <p class="coach-bio">With 15+ years of coaching experience, Coach Carlos specializes in tactical development and high-performance training.</p>
+                        <div class="coach-contact">
+                            <a href="mailto:carlos@elitesoccer.com"><i class="fas fa-envelope"></i></a>
+                            <a href="#carlos-modal" class="btn-outline view-profile">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coach 2 -->
+                <div class="coach-card" data-category="youth">
+                    <div class="coach-image">
+                        <img src="coaches/coach2.jpg" alt="Coach Sarah Johnson">
+                        <div class="coach-badge">Youth Coordinator</div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="coach-title">U8-U12 Program Lead</p>
+                        <div class="coach-credentials">
+                            <span><i class="fas fa-certificate"></i> USSF A License</span>
+                            <span><i class="fas fa-graduation-cap"></i> Child Development Specialist</span>
+                        </div>
+                        <p class="coach-bio">Expert in age-appropriate skill development with a focus on fun and fundamentals.</p>
+                        <div class="coach-contact">
+                            <a href="mailto:sarah@elitesoccer.com"><i class="fas fa-envelope"></i></a>
+                            <a href="#sarah-modal" class="btn-outline view-profile">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coach 3 -->
+                <div class="coach-card" data-category="goalkeeping">
+                    <div class="coach-image">
+                        <img src="coaches/coach3.jpg" alt="Coach David Okoye">
+                        <div class="coach-badge">Goalkeeper Coach</div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>David Okoye</h3>
+                        <p class="coach-title">Goalkeeping Director</p>
+                        <div class="coach-credentials">
+                            <span><i class="fas fa-certificate"></i> NSCAA GK Diploma</span>
+                            <span><i class="fas fa-trophy"></i> Former Pro Goalkeeper</span>
+                        </div>
+                        <p class="coach-bio">Specializes in shot-stopping, distribution, and game management for keepers of all ages.</p>
+                        <div class="coach-contact">
+                            <a href="mailto:david@elitesoccer.com"><i class="fas fa-envelope"></i></a>
+                            <a href="#david-modal" class="btn-outline view-profile">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coach 4 -->
+                <div class="coach-card" data-category="senior">
+                    <div class="coach-image">
+                        <img src="coaches/coach4.jpg" alt="Coach Emma Rodriguez">
+                        <div class="coach-badge">Fitness Coach</div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>Emma Rodriguez</h3>
+                        <p class="coach-title">Head of Athletic Development</p>
+                        <div class="coach-credentials">
+                            <span><i class="fas fa-certificate"></i> CSCS Certified</span>
+                            <span><i class="fas fa-running"></i> Sports Scientist</span>
+                        </div>
+                        <p class="coach-bio">Designs conditioning programs to enhance speed, agility, and injury prevention.</p>
+                        <div class="coach-contact">
+                            <a href="mailto:emma@elitesoccer.com"><i class="fas fa-envelope"></i></a>
+                            <a href="#emma-modal" class="btn-outline view-profile">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coach 5 -->
+                <div class="coach-card" data-category="youth">
+                    <div class="coach-image">
+                        <img src="coaches/coach5.jpg" alt="Coach James Wilson">
+                        <div class="coach-badge">Skills Coach</div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>James Wilson</h3>
+                        <p class="coach-title">Technical Trainer</p>
+                        <div class="coach-credentials">
+                            <span><i class="fas fa-certificate"></i> USSF B License</span>
+                            <span><i class="fas fa-magic"></i> Dribbling Specialist</span>
+                        </div>
+                        <p class="coach-bio">Focuses on creative ball mastery and 1v1 attacking skills.</p>
+                        <div class="coach-contact">
+                            <a href="mailto:james@elitesoccer.com"><i class="fas fa-envelope"></i></a>
+                            <a href="#james-modal" class="btn-outline view-profile">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coach 6 -->
+                <div class="coach-card" data-category="goalkeeping">
+                    <div class="coach-image">
+                        <img src="coaches/coach6.jpg" alt="Coach Lisa Chen">
+                        <div class="coach-badge">Assistant GK Coach</div>
+                    </div>
+                    <div class="coach-info">
+                        <h3>Lisa Chen</h3>
+                        <p class="coach-title">Youth Goalkeeping</p>
+                        <div class="coach-credentials">
+                            <span><i class="fas fa-certificate"></i> NSCAA Level 2 GK</span>
+                            <span><i class="fas fa-heart"></i> Psychology Degree</span>
+                        </div>
+                        <p class="coach-bio">Helps young keepers build confidence and foundational techniques.</p>
+                        <div class="coach-contact">
+                            <a href="mailto:lisa@elitesoccer.com"><i class="fas fa-envelope"></i></a>
+                            <a href="#lisa-modal" class="btn-outline view-profile">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaching Staff Benefits -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Why Train With Our Coaches?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Licensed Professionals</h3>
+                    <p>All coaches hold nationally recognized certifications.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progressive Curriculum</h3>
+                    <p>Structured development pathway for each age group.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Analysis</h3>
+                    <p>Personalized feedback using game footage.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>College Recruitment</h3>
+                    <p>Connections to collegiate soccer programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Team CTA -->
+    <section class="join-team-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want to Join Our Coaching Staff?</h2>
+                <p>We're always looking for passionate, qualified coaches.</p>
+                <a href="contact.html" class="btn">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Homepage) -->
+    <footer class="footer">
+        <!-- Footer content from homepage -->
+    </footer>
+
+    <!-- Coach Modals (Hidden until clicked) -->
+    <!-- Example for one coach (others would follow same structure) -->
+    <div id="carlos-modal" class="coach-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="coaches/coach1.jpg" alt="Coach Carlos Mendez">
+                <div class="modal-title">
+                    <h3>Carlos Mendez</h3>
+                    <p>Director of Coaching</p>
+                    <div class="modal-badge">Head Coach</div>
+                </div>
+                <a href="#" class="modal-close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <div class="modal-about">
+                    <h4>About Coach Carlos</h4>
+                    <p>With over 15 years of coaching experience at professional and academy levels, Coach Carlos brings a wealth of tactical knowledge to our program. Formerly a midfielder in Spain's La Liga, he transitioned to coaching where he has developed numerous professional players.</p>
+                </div>
+                <div class="modal-details">
+                    <div class="details-column">
+                        <h4>Credentials</h4>
+                        <ul>
+                            <li><i class="fas fa-certificate"></i> UEFA Pro License</li>
+                            <li><i class="fas fa-graduation-cap"></i> Sports Science Degree</li>
+                            <li><i class="fas fa-trophy"></i> 2x Youth National Champion</li>
+                        </ul>
+                    </div>
+                    <div class="details-column">
+                        <h4>Specializations</h4>
+                        <ul>
+                            <li><i class="fas fa-chess"></i> Tactical Systems</li>
+                            <li><i class="fas fa-running"></i> Midfield Play</li>
+                            <li><i class="fas fa-brain"></i> Game Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-contact">
+                    <a href="mailto:carlos@elitesoccer.com" class="btn"><i class="fas fa-envelope"></i> Contact Coach</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="logo-white.png" alt="Elite Soccer Academy">
+                        <span>Elite Soccer Academy</span>
+                    </div>
+                    <p>Developing technical excellence, tactical understanding, and personal character in young soccer players.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Coaches</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">Youth Development</a></li>
+                        <li><a href="#">Competitive Teams</a></li>
+                        <li><a href="#">Elite Training</a></li>
+                        <li><a href="#">Soccer Camps</a></li>
+                        <li><a href="#">Goalkeeper Training</a></li>
+                        <li><a href="#">College Prep</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> MPIGI, Kituntu-Sub County</li>
+                            <li><i class="fas fa-phone"></i> +256 753939396</li>
+                            <li><i class="fas fa-envelope"></i> tiktakfootballacademy@gmail.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 9am-7pm | Sat: 8am-4pm</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 TikTak Football Academy. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Coach Filter Functionality
+const filterButtons = document.querySelectorAll('.filter-btn');
+const coachCards = document.querySelectorAll('.coach-card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        const filterValue = button.getAttribute('data-filter');
+        
+        coachCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+
+// Coach Modal Functionality
+const viewProfileButtons = document.querySelectorAll('.view-profile');
+const coachModals = document.querySelectorAll('.coach-modal');
+const modalCloseButtons = document.querySelectorAll('.modal-close');
+
+viewProfileButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modalId = button.getAttribute('href');
+        document.querySelector(modalId).classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+modalCloseButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        coachModals.forEach(modal => modal.classList.remove('active'));
+        document.body.style.overflow = 'auto';
+    });
+});
+
+// Close modal when clicking outside content
+coachModals.forEach(modal => {
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        coachModals.forEach(modal => modal.classList.remove('active'));
+        document.body.style.overflow = 'auto';
+    }
+});
+    </script>
+</body>
+</html>
