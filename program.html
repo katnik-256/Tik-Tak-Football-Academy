@@ -393,9 +393,68 @@
         </div>
     </section>
 
-    <!-- Footer (Same as Homepage) -->
+    <!-- Footer -->
     <footer class="footer">
-        <!-- Footer content from homepage -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="./Assets/Logo.png" alt="TikTakFootballacademy Academy">
+                        <span>TikTak Academy</span>
+                    </div>
+                    <p>Developing technical excellence, tactical understanding, and personal character in young soccer players.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="program.html">Programs</a></li>
+                        <li><a href="coach.html">Coaches</a></li>
+                        <li><a href="">Facilities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="coach.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="program.html">Youth Development</a></li>
+                        <li><a href="program.html">Competitive Teams</a></li>
+                        <li><a href="#">Elite Training</a></li>
+                        <li><a href="#">Soccer Camps</a></li>
+                        <li><a href="#">Goalkeeper Training</a></li>
+                        <li><a href="#">College Prep</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> MPIGI, Kituntu-Sub County</li>
+                            <li><i class="fas fa-phone"></i> +256 753939396</li>
+                            <li><i class="fas fa-envelope"></i> tiktakfootballacademy@gmail.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 9am-7pm | Sat: 8am-4pm</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 TikTak Football Academy. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script>
@@ -446,6 +505,78 @@ window.addEventListener('scroll', function() {
         tabs.classList.remove('sticky');
     }
 });
+
+ document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Menu Toggle
+            const menuToggle = document.getElementById('mobile-menu');
+            const navList = document.querySelector('.nav-list');
+        
+            menuToggle.addEventListener('click', function () {
+                this.classList.toggle('active');
+                navList.classList.toggle('active');
+            });
+        
+            // Close mobile menu when clicking on a link
+            const navLinks = document.querySelectorAll('.nav-list a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    menuToggle.classList.remove('active');
+                    navList.classList.remove('active');
+                });
+            });
+        
+            // Navbar scroll effect
+            window.addEventListener('scroll', function () {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        
+            // Hero Slider
+            const slides = document.querySelectorAll('.slide');
+            const dotsContainer = document.querySelector('.slider-dots');
+            const prevBtn = document.querySelector('.prev-slide');
+            const nextBtn = document.querySelector('.next-slide');
+            let currentSlide = 0;
+        
+            // Create dots
+            slides.forEach((slide, index) => {
+                const dot = document.createElement('span');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+        
+            const dots = document.querySelectorAll('.slider-dots .dot');
+        
+            function goToSlide(slideIndex) {
+                slides[currentSlide].classList.remove('active');
+                dots[currentSlide].classList.remove('active');
+                currentSlide = slideIndex;
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }
+        
+            function nextSlide() {
+                let nextIndex = (currentSlide + 1) % slides.length;
+                goToSlide(nextIndex);
+            }
+        
+            function prevSlideFunc() {
+                let prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+                goToSlide(prevIndex);
+            }
+        
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlideFunc);
+        
+            // Optional autoplay
+             setInterval(nextSlide, 5000);
+        });
     </script>
 </body>
 </html>
